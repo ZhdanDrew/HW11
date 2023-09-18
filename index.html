@@ -4,61 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .title {
-            height: 50px;
-            background-color: #808080;
-            display: flex;
-            align-items: center;
-            padding-left: 10px;
-            font-size: 20px;
-            cursor: pointer; 
-        }
 
-        .txt {
-            height: 0;
-            background-color: #d3d3d3;
-            display: flex;
-            align-items: center;
-            padding-left: 10px;
-            font-size: 20px;
-            overflow: hidden;
-            transition: height 0.5s; 
-        }
+    <script src="./JS.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./media.css">
 
-        .block {
-            margin-bottom: 10px;
-        }
-
-        .wraper {
-            background-color: #d3d3d3;
-            width: 90%;
-            margin: auto;
-        }
-
-        
-        .txt.active {
-            height: 200px;
-        }
-
-        @media screen and (max-width: 279px) {
-    .title {
-        font-size: 18px;
-    }
-
-    .txt {
-            height: 0;
-            background-color: #d3d3d3;
-            display: flex;
-            align-items: center;
-            padding-left: 10px;
-            font-size: 17px;
-            overflow: hidden;
-            transition: height 0.5s; 
-        }
-}
-
-    </style>
 </head>
 <body>
     <div class="wraper">
@@ -78,11 +28,6 @@
         </div>
     </div>
 
-    <script>
-        function toggleText(id) {
-            var textBlock = document.getElementById(id);
-            textBlock.classList.toggle("active");
-        }
-    </script>
+    
 </body>
 </html>
